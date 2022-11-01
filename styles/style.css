@@ -33,8 +33,7 @@
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
-  margin-top: auto ;
-  margin-bottom: auto;
+  align-self: center;
   margin-left: 64px;
   width: 730px;
   z-index: 2;
@@ -58,6 +57,7 @@
 
 .subtitles__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__square-pic {
@@ -77,6 +77,56 @@
   right: 0;
   bottom: 0;
   z-index: 1;
+}
+
+.description {
+  border: 1px solid blue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns {
+  border: 1px solid red;
+  width: 80%;
+  background-color: white;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.two-columns__brief {
+  border: 1px solid red;
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #2f80ed;
+}
+.two-columns__main-text {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  width: 80%; 
+  min-width: 784px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph1 {
+  margin-bottom: 30px;
+}
+.two-columns__paragraph2 {
+  margin-bottom: 30px;
+}
+.two-columns__paragraph3 {
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
