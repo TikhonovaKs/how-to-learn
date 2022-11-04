@@ -21,13 +21,13 @@
 .logo {
   width: 228px;
   height: 32px;
-  z-index: 2;
 }
 .logo_place_header {
   background-image: url(../images/logo_place_header.svg);
   left: 64px;
   top: 30px;
   position: absolute;
+  z-index: 3;
 }
 
 .header__title {
@@ -35,14 +35,14 @@
   line-height: 96px;
   font-weight: 600;
   align-self: center;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   width: 730px;
   z-index: 2;
 }
 
 .subtitles {
   position: absolute;
-  width: 388px;
+  width: 399px;
   left: 64px;
   bottom: 30px;
   font-size: 18px;
@@ -251,8 +251,8 @@
 .kaufman__triangle {
   position: absolute;
   background-image: url(../images/kaufman-triangle.svg);
-  width: 890px;
-  height: 890px;
+  width: 880px;
+  height: 880px;
   top: 0;
   right: -210px;
   background-size: cover;
@@ -299,6 +299,7 @@ z-index: 1;
   background-image: url(../images/logo_place_footer.svg);
   margin-left: 0;
   margin-top: 0;
+  z-index: 3;
 }
 .footer__author {
   font-size: 18px;
@@ -336,16 +337,12 @@ display: flex;
   flex-direction: column;
 }
 .footer__social-icon {
-margin-right: 5px;
+margin-right: 10px;
+width: 16px;
+height: 16px;
+align-self: center;
 }
 
-
-
-/* и элемента с модификатором вида ключ-значение 
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-} */
-
+.footer__social-link {
+  display: flex;
+}
