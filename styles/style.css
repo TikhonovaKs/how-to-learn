@@ -33,24 +33,19 @@
   font-weight: 600;
   align-self: center;
   margin: 0 0 0 64px;
-  width: 730px;
+  max-width: 730px;
   z-index: 2;
 }
 
-.subtitles {
+.header__subtitle {
   position: absolute;
-  width: 399px;
+  width: 388px;
   left: 64px;
   bottom: 30px;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
   z-index: 2;
-}
-
-.header__subtitle {
-  display: inline;
-  width: 100%;
 }
 
 .header__link {
@@ -93,7 +88,7 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
@@ -117,12 +112,6 @@
 
 .two-columns__paragraph_no_margin_bottom {
   margin-bottom: 0;
-}
-
-.two-columns__paragraph-span {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .two-columns__span-accent {
@@ -160,6 +149,8 @@
   width: 1100px;
   display: flex;
   margin-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .table__row {
@@ -171,13 +162,15 @@
 
 .table__cell {
   width: 250px;
+  margin-top: 60px;
 }
 
 .table__heading {
   font-size: 24px;
   line-height: 1.15;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .table__text {
@@ -186,11 +179,14 @@
   font-weight: normal;
   margin-top: 20px;
 }
+.table__text:last-child {
+  margin-bottom: 0;
+}
 
 .feynman {
   position:relative;
   background-color: #f2f2f2;
-  height: 890px;
+  min-height: 890px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,7 +201,7 @@
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   font-size: 120px;
   line-height: 1.15;
   font-weight: 600;
@@ -313,7 +309,7 @@ z-index: 1;
   font-weight: normal;
   margin-left: 0;
   margin-bottom: 18px;
-  top: 18px;
+  margin-top: 18px;
 }
 
 .footer__column_content_info {
@@ -328,19 +324,19 @@ z-index: 1;
 }
 
 .footer__column-links {
-  padding-left: 0;
   margin-top: 20px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
+  list-style: none;
 }
 
 .footer__column-link {
-text-decoration: none;
-color: currentColor;
 font-size: 18px;
 line-height: 30px;
 font-weight: normal;
-display: flex;
+text-decoration: none;
+color: white;
 }
 
 .footer__column_content_social {
